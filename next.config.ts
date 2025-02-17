@@ -3,7 +3,7 @@ import type { Configuration, RuleSetRule } from "webpack";
 
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
-  output: "export",
+  
   images: {
     unoptimized: true, // ✅ Disable Image Optimization for static export
   },
