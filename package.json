@@ -2,6 +2,9 @@
   "name": "reiki-landing",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -11,6 +14,7 @@
   "dependencies": {
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf-viewer/default-layout": "^3.12.0",
+    "canvas": "^2.9.3",
     "framer-motion": "^12.4.3",
     "next": "15.1.7",
     "pdfjs-dist": "^3.0.279",
