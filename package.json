@@ -19,10 +19,12 @@
     "react-icons": "^5.4.0"
   },
   "resolutions": {
-    "pdfjs-dist": "3.0.279"
+    "pdfjs-dist": "3.0.279",
+    "canvas": "npm:@napi-rs/canvas"
   },
   "overrides": {
-    "pdfjs-dist": "3.0.279"
+    "pdfjs-dist": "3.0.279",
+    "canvas": "npm:@napi-rs/canvas"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
