@@ -3,13 +3,14 @@ import type { Configuration, RuleSetRule } from "webpack";
 
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
-  
   images: {
-    unoptimized: true, // ✅ Disable Image Optimization for static export
+    unoptimized: true, // ✅ Required for static export to work properly
   },
   eslint: {
-    ignoreDuringBuilds: true, // ✅ Prevent ESLint errors from breaking deployment
+    ignoreDuringBuilds: true, // ✅ Prevents ESLint errors from stopping deployment
   },
+  output: "export", // ✅ Ensures static export (REMOVE if using SSR)
+  trailingSlash: true, // ✅ Fixes static route issues in some cases
   /**
    * Extend the default webpack configuration.
    *
