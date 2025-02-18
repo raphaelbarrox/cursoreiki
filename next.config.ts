@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true, // ✅ Prevents ESLint errors from stopping deployment
   },
-  output: "export", // ✅ Ensures static export (REMOVE if using SSR)
+  //**output: "export", // ✅ Ensures static export (REMOVE if using SSR)
   trailingSlash: true, // ✅ Fixes static route issues in some cases
   /**
    * Extend the default webpack configuration.
